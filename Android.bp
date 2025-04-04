@@ -21481,6 +21481,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.qualcomm.qti.wifidisplayhal@1.0",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwfdavenhancements",
     owner: "sony",
     strip: {
@@ -21522,6 +21550,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib/libwfdmmsrc_system.so",
             ],
             shared_libs: [
+                "libgui_shim",
                 "libbinder",
                 "libmmosal",
                 "liblog",
@@ -21540,10 +21569,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libgralloctypes",
                 "android.hardware.graphics.mapper@4.0",
-                "libvndksupport",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.allocator-V2-ndk",
-                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -21588,8 +21613,6 @@ cc_prebuilt_library_shared {
                 "libwfdavenhancements",
                 "libhidlbase",
                 "vendor.qti.hardware.wifidisplaysession@1.0",
-                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
-                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -21618,32 +21641,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -21819,6 +21816,8 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libwfdnative.so",
             ],
             shared_libs: [
+                "libinput_shim",
+                "libbinder_shim",
                 "libandroid_runtime",
                 "libui",
                 "libinput",
