@@ -332,6 +332,7 @@ PRODUCT_PACKAGES += \
     libq3dtools_esx \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.0-impl-qti \
+    audio.primary.sdm845 \
     com.qualcomm.qti.ant@1.0-impl \
     thermal.somc \
     vendor.qti.esepowermanager@1.0-impl \
@@ -363,6 +364,7 @@ PRODUCT_PACKAGES += \
     libRSDriver_adreno \
     libSecureUILib \
     libStDrvInt \
+    liba2dpoffload \
     libacdb-fts \
     libacdbrtac \
     libadiertac \
@@ -371,8 +373,11 @@ PRODUCT_PACKAGES += \
     libadsprpc \
     libaoa \
     libaudcal \
+    libaudio_log_utils \
+    libaudioalsa \
     libaudioparsers \
     libbatching \
+    libbatterylistener \
     libbccQTI \
     libbluetooth_audio_session_qti \
     libc2d30_bltlib \
@@ -394,6 +399,7 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
+    libcomprcapture \
     libconfigdb \
     libcsd-client \
     libdevice_security_vendor \
@@ -404,6 +410,7 @@ PRODUCT_PACKAGES += \
     libdrmtime \
     libdsi_netctrl \
     libdsutils \
+    libexthwplugin \
     libfastcvdsp_stub \
     libfastcvopt \
     libfastrpc_utf_stub \
@@ -419,7 +426,10 @@ PRODUCT_PACKAGES += \
     libgsl \
     libhdcprx_module \
     libhdcptx_module \
+    libhdmiedid \
+    libhdmipassthru \
     libhdr_tm \
+    libhfp \
     libidd \
     libidl \
     libizat_client_api \
@@ -509,13 +519,16 @@ PRODUCT_PACKAGES += \
     libsensorcal \
     libsensorslog \
     libsettings \
+    libsndmonitor \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
     libsns_low_lat_stream_stub \
     libsnsapi \
     libsnsdiaglog \
     libsomc_thermal \
+    libsonydseehxwrapper \
     libspcom \
+    libspkrprot \
     libspl \
     libssc \
     libssc_default_listener \
@@ -679,6 +692,7 @@ PRODUCT_PACKAGES += \
     libOmxVideoDSMode \
     libOmxVpp \
     libSNPE \
+    libadm \
     libadpcmdec \
     libc++_shared \
     libcom.qti.chinodeutils \
