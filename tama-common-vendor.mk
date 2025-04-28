@@ -332,7 +332,6 @@ PRODUCT_PACKAGES += \
     libq3dtools_esx \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.0-impl-qti \
-    audio.primary.sdm845 \
     com.qualcomm.qti.ant@1.0-impl \
     thermal.somc \
     vendor.qti.esepowermanager@1.0-impl \
@@ -877,6 +876,7 @@ PRODUCT_PACKAGES += \
     libdpmframework \
     libdpmtcm \
     libwfdnative \
+    audio.primary.sdm845_odm \
     CneApp \
     IWlanService \
     TimeService \
